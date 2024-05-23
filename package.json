@@ -1,0 +1,23 @@
+{
+    "name": "udemy-blog",
+    "version": "1.0.0",
+    "description": "MERN app to learn full stack development",
+    "main": "server.js",
+    "scripts": {
+        "_comment": "The concurrently library helps in running two commands at once",
+        "server": "nodemon server",
+        "client": "npm run dev --prefix client",
+        "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+    "keywords": [],
+    "author": "Shivang Bokolia",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.19.2",
+        "mongoose": "^8.4.0"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2",
+        "nodemon": "^3.1.0"
+    }
+}
